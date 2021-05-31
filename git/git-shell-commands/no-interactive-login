@@ -1,0 +1,2 @@
+printf '%s\n' "You've successfully authenticated, but there is no interactive shell access."
+exit 128

@@ -1,0 +1,13 @@
+version: "3"
+services:
+  git:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      # Map host 2222 to SSH 22
+      - "2222:22"
+    restart: always
+    volumes:
+    - ./keys:/src/keys
+    - ./repos:/srv/git
