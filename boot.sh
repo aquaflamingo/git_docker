@@ -18,4 +18,5 @@ if [ "$(ls -A /srv/git/)" ]; then
 fi
 
 echo "Starting SSHD"
-/usr/sbin/sshd -D
+
+/usr/sbin/sshd -D -f /etc/ssh/sshd_config
